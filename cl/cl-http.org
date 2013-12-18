@@ -1,0 +1,13 @@
+* start
+(load "contrib/kpoeck/port-template/load.lisp")
+(COMPILE-ALL)
+(HTTP::START-EXAMPLES)
+** save
+cl-http/contrib/kpoeck/port-template$ sbcl --no-userinit
+(load "load.lisp")
+(compile-all)
+(save-lisp-and-die "cl-http.core")
+
+
+* help
+http://clhttp.plasticki.com

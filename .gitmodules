@@ -1,0 +1,3 @@
+[submodule "red/red-src"]
+	path = red/red-src
+	url = https://github.com/red/red.git

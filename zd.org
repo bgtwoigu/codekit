@@ -1,0 +1,83 @@
+* *Nix
+** Install
+*** [[https://wiki.archlinux.org/index.php/Archiso][ArchISO wiki]]
+
+** wm
+*** awesome
+/opt/duxd/wm/
+git clone https://github.com/copycat-killer/awesome-copycats.git awesome35-copycats
+git clone https://github.com/mikar/awesome34-themes.git
+*** Mod4
+~/.Xmodmap
+    clear lock 
+    add mod4 = Caps_Lock
+xmodmap ~/.Xmodmap
+
+** vnc
+*** [[http://www.karlrunge.com/x11vnc/][x11vnc]]
+tsvnc, need Xvfb
+Option:change display size
+[ ]shift,lock,Mod4 can't use
+
+** [[http://www.gnu.org/software/make/manual/html_node/index.html][GNU `make']]
+
+* emacs
+** basic usage
+emacs --debug-init
+C-h i info
+
+** server-mode
+*** alias
+ecc='emacsclient -c'
+ecd='emacs –daemon'
+ect='emacsclient -nw'
+emacs='LC_CTYPE=zh_CN.UTF-8 emacs'
+** eshell
+
+** org-mode
+*** Link
+C-c C-l
+
+** [[http://www.emacswiki.org/emacs/Git][git-emacs wiki]]
+*** [[https://github.com/tsgates/git-emacs][git-mode]]
+
+** package
+[[https://github.com/fare/asdf3-2013/blob/master/els-slides.org][els-slides]]
+*** ELPA: Emacs Lisp Package
+**** package.el
+M-x package-list-packages
+U Upgrade
+i install
+d delete
+x execute
+*** ASDF
+Another System Definition Facility
+*** [[http://quicklisp.org/][quicklisp]] (builds upon ASDF)
+ To find systems, use: (ql:system-apropos "term")
+ To load a system, use: (ql:quickload "system-name")
+ 獲取第三方軟件包更新 (ql:update-all-dists)
+ 更新 Quicklisp (ql:update-client)
+ 看特定軟件包的依賴關係 (ql:who-depends-on system-name)
+*** [[http://common-lisp.net/project/clbuild/][clbuild]] (builds upon Quicklisp)
+
+*** [[https://github.com/dimitri/el-get][el-get]]
+**** M-x el-xxx
+
+
+* cl
+** 00startup
+CL-USER> (format t "hello~%")
+hello
+NIL
+** 01var
+
+* ck
+** chipcode
+*** 如何确定各模块使用编译工具的版本？
+*** 统一的脚本编译
+**** 函数模块化
+** android
+*** build
+**** 添加区分项目
+**** 还有遗漏的
+**** 查阅手册

@@ -1,0 +1,31 @@
+[user]
+	name = duxd
+	email = icebergbsd@gmail.com
+[color]
+        status = auto
+        branch = auto
+        ui = auto
+[alias]
+        co = checkout
+        cb = checkout -b
+        ca  = commit -a
+        st = status
+        s = status -s
+        br = branch -a
+        b = branch
+        w = whatchanged
+        d = diff
+        dc = diff --cached
+        df = diff --no-ext-diff
+        l = log
+        p = log -p
+        rh = reset --hard
+        g = log --graph
+        r = remote -v
+        f = fetch --all
+
+[push]
+        default = current
+
+[review "192.168.180.185:8081"]
+	username = duxd
